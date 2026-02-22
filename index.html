@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce page</title>
+    <style>
+      body {
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1e3a8a;
+        padding: 15px 30px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        flex-wrap: wrap;
+      }
+      .title {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .links {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        flex-wrap: wrap;
+      }
+      .links a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+      }
+      .links a:hover {
+        color: #facc15;
+      }
+      body {
+        margin: 0%;
+        background-color: #f4f6f9;
+      }
+      intro {
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .product {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        padding: 40px;
+      }
+      .card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+      }
+      .card img {
+        width: 100%;
+        border-radius: 12px;
+        transition: transform o.3s ease;
+      }
+      .card:hover img {
+        transform: scale(1.05);
+      }
+      .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #1e3a8a;
+      }
+      @media(max-width:500px){
+        .product{
+          grid-template-columns: 1fr;
+        }}
+        @media(max-width:768px){
+          .product{
+            grid-template-columns: repeat(2,1fr);
+          }
+        }
+
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="title">Sonic Technology</h1>
+      <ul class="links">
+        <li><a href="">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <section style="margin-top: 90px">
+      <div class="intro">
+        <h1>Discover the Future of Smart Electronics</h1>
+        <p>
+          Upgrade your lifestyle with cutting-edge technology designed for
+          comfort perfprmance and reliability.
+        </p>
+        <img src="" alt="" />
+      </div>
+    </section>
+    <section class="product">
+      <div class="card">
+        <img src="images/headphone.webp" alt="headphones" />
+        <h3>Wireless heaphones</h3>
+        <p class="price">$79</p>
+        <p class="rating">⭐⭐⭐⭐</p>
+        <button>Add to cart</button>
+      </div>
+      <div class="card">
+        <img src="images/watch.jpg" alt="watch" />
+        <p class="price">$149</p>
+        <p class="rating">⭐⭐⭐⭐</p>
+        <button>Add to cart</button>
+      </div>
+      <div class="card">
+        <img src="images/speaker.jpg" alt="speaker" />
+        <p class="price">$29</p>
+        <p class="rating">⭐⭐⭐⭐</p>
+        <button>Add to cart</button>
+      </div>
+      <div class="card">
+        <img src="images/laptop.jpg" alt="laptop" />
+        <p class="price">$200</p>
+        <p class="rating">⭐⭐⭐⭐</p>
+        <button>Add to cart</button>
+      </div>
+      <div class="card">
+        <img src="images/console.jpg" alt="console" />
+        <p class="price">$57</p>
+        <p class="rating">⭐⭐⭐⭐</p>
+        <button>Add to cart</button>
+      </div>
+      <div class="card">
+        <img src="images/phone.jpg" alt="phone" />
+        <p class="price">$109</p>
+        <p class="rating">⭐⭐⭐⭐</p>
+        <button>Add to cart</button>
+      </div>
+    </section>
+  </body>
+</html>
