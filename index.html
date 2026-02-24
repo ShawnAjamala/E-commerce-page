@@ -9,7 +9,7 @@
         font-family:
           "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
-      .layout{
+      .layout {
         display: flex;
       }
       .navbar {
@@ -25,23 +25,23 @@
         z-index: 1000;
         flex-wrap: wrap;
       }
-      .sidebar{
-        width: 100px;;
+      .sidebar {
+        width: 100px;
         background-color: #1e3a8a;
         color: #f4f6f9;
         padding: 20px;
         height: 100vh;
         position: fixed;
       }
-      .sidebar ul{
+      .sidebar ul {
         list-style: none;
         padding: 0;
       }
-      .sidebar ul a{
+      .sidebar ul a {
         color: #f4f6f9;
         text-decoration: none;
       }
-      .sidebar ul a:hover{
+      .sidebar ul a:hover {
         color: #facc15;
       }
       .title {
@@ -101,27 +101,26 @@
         font-weight: bold;
         color: #1e3a8a;
       }
-      h3{
+      h3 {
         color: #1e3a8a;
       }
-      button{
+      button {
         color: #1e3a8a;
       }
-      button:hover{
+      button:hover {
         color: black;
         transition: transform 0.3s ease;
       }
-      @media(max-width:500px){
-        .product{
+      @media (max-width: 500px) {
+        .product {
           grid-template-columns: 1fr;
-        }}
-        @media(max-width:768px){
-          .product{
-            grid-template-columns: repeat(2,1fr);
-          }
         }
-
-      
+      }
+      @media (max-width: 768px) {
+        .product {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
     </style>
   </head>
   <body>
@@ -135,71 +134,73 @@
       </ul>
     </nav>
     <div class="layout">
-    <div class="sidebar">
-      <h3>Categories</h3>
-      <ul>
-        <li><a href="">Smartphone</a></li>
-        <li><a href="">Smartwatches</a></li>
-        <li><a href="">Headphones</a></li>
-        <li><a href="">Speaker</a></li>
-        <li><a href="">Console</a></li>
-        <li><a href="">Laptop</a></li>
-      </ul>
-    </div>
-    <section style="margin-top: 90px">
-      <div class="intro">
-        <h1 style="margin-left: 250px;">Discover the Future of Smart Electronics</h1>
-        <p style="margin-left: 250px;">
-          Upgrade your lifestyle with cutting-edge technology designed for
-          comfort perfprmance and reliability.
-        </p>
-        <img src="" alt="" />
+      <div class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="">Smartphone</a></li>
+          <li><a href="">Smartwatches</a></li>
+          <li><a href="">Headphones</a></li>
+          <li><a href="">Speaker</a></li>
+          <li><a href="">Console</a></li>
+          <li><a href="">Laptop</a></li>
+        </ul>
       </div>
-    </section>
-    <section class="product">
-      <div class="card">
-        <img src="images/headphone.webp" alt="headphones" />
-        <h3>Wireless heaphones</h3>
-        <p class="price">$79</p>
-        <p class="rating">⭐⭐⭐⭐</p>
-        <button>Add to cart</button>
-      </div>
-      <div class="card">
-        <img src="images/watch.jpg" alt="watch" />
-        <h3>Smart watch</h3>
-        <p class="price">$149</p>
-        <p class="rating">⭐⭐⭐⭐</p>
-        <button>Add to cart</button>
-      </div>
-      <div class="card">
-        <img src="images/speaker.jpg" alt="speaker" />
-        <h3>Bluetooth speaker</h3>
-        <p class="price">$29</p>
-        <p class="rating">⭐⭐⭐⭐</p>
-        <button>Add to cart</button>
-      </div>
-      <div class="card">
-        <img src="images/laptop.jpg" alt="laptop" />
-        <h3>Macbook laptop</h3>
-        <p class="price">$200</p>
-        <p class="rating">⭐⭐⭐⭐</p>
-        <button>Add to cart</button>
-      </div>
-      <div class="card">
-        <img src="images/console.jpg" alt="console" />
-        <h3>Console</h3>
-        <p class="price">$57</p>
-        <p class="rating">⭐⭐⭐⭐</p>
-        <button>Add to cart</button>
-      </div>
-      <div class="card">
-        <img src="images/phone.jpg" alt="phone" />
-        <h3>Samsung phone</h3>
-        <p class="price">$109</p>
-        <p class="rating">⭐⭐⭐⭐</p>
-        <button>Add to cart</button>
-      </div>
-    </section>
+      <section style="margin-top: 90px">
+        <div class="intro">
+          <h1 style="margin-left: 250px">
+            Discover the Future of Smart Electronics
+          </h1>
+          <p style="margin-left: 250px">
+            Upgrade your lifestyle with cutting-edge technology designed for
+            comfort perfprmance and reliability.
+          </p>
+          <img src="" alt="" />
+        </div>
+      </section>
+      <section class="product">
+        <div class="card">
+          <img src="images/headphone.webp" alt="headphones" />
+          <h3>Wireless heaphones</h3>
+          <p class="price">$79</p>
+          <p class="rating">⭐⭐⭐⭐</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="card">
+          <img src="images/watch.jpg" alt="watch" />
+          <h3>Smart watch</h3>
+          <p class="price">$149</p>
+          <p class="rating">⭐⭐⭐⭐</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="card">
+          <img src="images/speaker.jpg" alt="speaker" />
+          <h3>Bluetooth speaker</h3>
+          <p class="price">$29</p>
+          <p class="rating">⭐⭐⭐⭐</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="card">
+          <img src="images/laptop.jpg" alt="laptop" />
+          <h3>Macbook laptop</h3>
+          <p class="price">$200</p>
+          <p class="rating">⭐⭐⭐⭐</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="card">
+          <img src="images/console.jpg" alt="console" />
+          <h3>Console</h3>
+          <p class="price">$57</p>
+          <p class="rating">⭐⭐⭐⭐</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="card">
+          <img src="images/phone.jpg" alt="phone" />
+          <h3>Samsung phone</h3>
+          <p class="price">$109</p>
+          <p class="rating">⭐⭐⭐⭐</p>
+          <button>Add to cart</button>
+        </div>
+      </section>
     </div>
   </body>
 </html>
