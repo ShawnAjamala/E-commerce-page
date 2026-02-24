@@ -9,6 +9,9 @@
         font-family:
           "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
+      .layout{
+        display: flex;
+      }
       .navbar {
         display: flex;
         justify-content: space-between;
@@ -21,6 +24,25 @@
         left: 0;
         z-index: 1000;
         flex-wrap: wrap;
+      }
+      .sidebar{
+        width: 100px;;
+        background-color: #1e3a8a;
+        color: #f4f6f9;
+        padding: 20px;
+        height: 100vh;
+        position: fixed;
+      }
+      .sidebar ul{
+        list-style: none;
+        padding: 0;
+      }
+      .sidebar ul a{
+        color: #f4f6f9;
+        text-decoration: none;
+      }
+      .sidebar ul a:hover{
+        color: #facc15;
       }
       .title {
         color: white;
@@ -68,7 +90,8 @@
       .card img {
         width: 100%;
         border-radius: 12px;
-        transition: transform o.3s ease;
+        transition: transform 0.3s ease;
+        height: 100px;
       }
       .card:hover img {
         transform: scale(1.05);
@@ -80,6 +103,13 @@
       }
       h3{
         color: #1e3a8a;
+      }
+      button{
+        color: #1e3a8a;
+      }
+      button:hover{
+        color: black;
+        transition: transform 0.3s ease;
       }
       @media(max-width:500px){
         .product{
@@ -104,10 +134,22 @@
         <li><a href="">Contact</a></li>
       </ul>
     </nav>
+    <div class="layout">
+    <div class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="">Smartphone</a></li>
+        <li><a href="">Smartwatches</a></li>
+        <li><a href="">Headphones</a></li>
+        <li><a href="">Speaker</a></li>
+        <li><a href="">Console</a></li>
+        <li><a href="">Laptop</a></li>
+      </ul>
+    </div>
     <section style="margin-top: 90px">
       <div class="intro">
-        <h1>Discover the Future of Smart Electronics</h1>
-        <p>
+        <h1 style="margin-left: 250px;">Discover the Future of Smart Electronics</h1>
+        <p style="margin-left: 250px;">
           Upgrade your lifestyle with cutting-edge technology designed for
           comfort perfprmance and reliability.
         </p>
@@ -158,5 +200,6 @@
         <button>Add to cart</button>
       </div>
     </section>
+    </div>
   </body>
 </html>
