@@ -27,10 +27,14 @@ export default function AuthPage() {
       }
     } catch (err) {
       let message = err.message;
-      if (message.includes("auth/email-already-in-use")) message = "Email already in use";
-      else if (message.includes("auth/invalid-email")) message = "Invalid email address";
-      else if (message.includes("auth/wrong-password")) message = "Wrong password";
-      else if (message.includes("auth/user-not-found")) message = "No account found with this email";
+      if (message.includes("auth/email-already-in-use"))
+        message = "Email already in use";
+      else if (message.includes("auth/invalid-email"))
+        message = "Invalid email address";
+      else if (message.includes("auth/wrong-password"))
+        message = "Wrong password";
+      else if (message.includes("auth/user-not-found"))
+        message = "No account found with this email";
       setError(message);
     } finally {
       setLoading(false);
